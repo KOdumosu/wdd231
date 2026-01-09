@@ -1,0 +1,215 @@
+/* ===== Base Reset & Variables ===== */
+:root {
+  --dark: #222;
+  --light: #f2f2f2;
+  --gray: #ddd;
+  --accent: #000;
+}
+
+* {
+  box-sizing: border-box;
+  margin: 0;
+  padding: 0;
+}
+
+body {
+  font-family: "Roboto", sans-serif;
+  line-height: 1.6;
+  color: #000;
+  background-color: #fff;
+}
+
+/* ===== Header ===== */
+header {
+  display: flex;
+  align-items: center;
+  gap: 1rem;
+  padding: 1rem;
+}
+
+header img {
+  width: 50px;
+  height: auto;
+}
+
+header span {
+  font-weight: 700;
+  font-size: 1.1rem;
+}
+
+/* ===== Animated Hamburger ===== */
+.hamburger {
+  margin-left: auto;
+  background: var(--gray);
+  border: none;
+  cursor: pointer;
+  width: 32px;
+  height: 24px;
+  display: flex;
+  flex-direction: column;
+  justify-content: space-between;
+}
+
+.hamburger span {
+  display: block;
+  height: 3px;
+  background-color: #000;
+  border-radius: 2px;
+  transition: transform 0.3s ease, opacity 0.3s ease;
+}
+
+/* Animate to X */
+.hamburger.open span:nth-child(1) {
+  transform: translateY(10px) rotate(45deg);
+}
+
+.hamburger.open span:nth-child(2) {
+  opacity: 0;
+}
+
+.hamburger.open span:nth-child(3) {
+  transform: translateY(-10px) rotate(-45deg);
+}
+/* ===== Navigation (Mobile) ===== */
+.navigation {
+  background-color: #222;
+}
+
+.navigation ul {
+  list-style: none;
+  display: none;
+  flex-direction: column;
+}
+
+.navigation.open ul {
+  display: flex;
+}
+
+.navigation li {
+  border-top: 1px solid #444;
+}
+
+.navigation a {
+  display: block;
+  padding: 0.75rem 1rem;
+  color: #fff;
+  text-decoration: none;
+  font-size: 1rem;
+}
+
+.navigation a:hover,
+.navigation a.active {
+  background-color: #333;
+}
+
+/* ===== Main (Mobile Default) ===== */
+main {
+  padding: 1rem;
+}
+
+/* Sections stack naturally */
+.about,
+.photo,
+.courses {
+  width: 100%;
+  margin-bottom: 1.5rem;
+}
+
+h1 {
+  margin-bottom: 1rem;
+}
+
+section {
+  margin-bottom: 1.5rem;
+  background-color: var(--light);
+  padding: 1rem;
+}
+
+/* Section headers */
+section h2 {
+  background-color: var(--dark);
+  color: #fff;
+  padding: 0.5rem;
+  font-size: 1rem;
+  margin: -1rem -1rem 1rem -1rem;
+  text-align: center;
+}
+
+/* ===== Photo ===== */
+.photo img {
+  width: 100%;
+  height: auto;
+  display: block;
+  background-color: var(--gray);
+}
+
+/* ===== Courses (Mobile) ===== */
+.courses h2 {
+  text-align: center;
+}
+
+.filters {
+  display: flex;
+  justify-content: space-between;
+  gap: 0.5rem;
+  margin-bottom: 0.75rem;
+}
+
+.filters button {
+  flex: 1;
+  padding: 0.4rem;
+  border-radius: 6px;
+  border: 1px solid #000;
+  background-color: #ddd;
+  font-weight: 600;
+}
+
+#courseCards {
+  display: flex;
+  flex-direction: column;
+  gap: 0.4rem;
+}
+
+#courseCards div {
+  background-color: #ccc;
+  padding: 0.4rem;
+  text-align: center;
+  border-radius: 4px;
+}
+
+#totalCredits {
+  margin-top: 0.75rem;
+  text-align: center;
+  font-size: 0.9rem;
+}
+
+
+/*-------------FOOTER --------------*/
+footer {
+    background-color: #ddd;
+    padding: 1rem 10px ;
+     text-align: center;
+}
+
+.social{
+    display: flex;
+    justify-content: center;
+    column-gap: 8px;
+}
+
+.social a{
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    width: 44px;
+    height: 44px;
+    border: #ccc solid 1px;
+}
+.social img{
+    display: block;
+    width: 22px;
+    height:22px;
+}
+.social a:hover {
+    background-color: #E07A5F;
+}

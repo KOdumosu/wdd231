@@ -1,0 +1,87 @@
+@media (min-width: 768px) {
+
+  /* ===== Header ===== */
+  header {
+    max-width: 1100px;
+    margin: 0 auto;
+  }
+
+  /* Hide hamburger on desktop */
+  .hamburger {
+    display: none;
+  }
+
+  /* Horizontal navigation */
+  .navigation ul {
+    display: flex !important;
+    flex-direction: row;
+    justify-content: flex-start;
+    gap: 1.5rem;
+    max-width: 1100px;
+    margin: 0 auto;
+    padding: 0.5rem 0;
+  }
+
+  .navigation li {
+    border: none;
+  }
+
+  .navigation a {
+    padding: 0;
+    font-size: 0.95rem;
+  }
+
+  .navigation a:hover,
+  .navigation a.active {
+    background: none;
+    text-decoration: underline;
+  }
+
+  /* ===== Main Layout ===== */
+  main {
+    max-width: 1100px;
+    margin: 0 auto;
+    display: grid;
+    grid-template-columns: 2fr 1fr;
+    gap: 1.5rem;
+  }
+
+  h1 {
+    grid-column: 1 / -1;
+  }
+
+  .about {
+    grid-column: 1 / 2;
+  }
+
+  .photo {
+    grid-column: 2 / 3;
+  }
+
+  /* ===== Courses Section ===== */
+  .courses {
+    grid-column: 1 / -1;
+  }
+
+  .filters {
+    display: flex;
+    justify-content: space-between;
+    max-width: 600px;
+    margin: 0 auto 1rem;
+  }
+
+  #courseCards {
+    display: grid;
+    grid-template-columns: repeat(4, 1fr);
+    gap: 1rem;
+  }
+
+  .course {
+    margin: 0;
+  }
+
+  /* ===== Footer ===== */
+  footer {
+    margin-top: 2rem;
+  }
+}

@@ -1,0 +1,84 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8">
+  <meta name="description" content="WDD231 Course Home Page">
+  <meta name="author" content="Kehinde">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>WDD231 | Home</title>
+
+  <link rel="preconnect" href="https://fonts.googleapis.com">
+  <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+  <link href="https://fonts.googleapis.com/css2?family=Roboto:wght@400;700&display=swap" rel="stylesheet">
+
+  <link rel="stylesheet" href="styles/normalize.css">
+  <link rel="stylesheet" href="styles/base.css">
+  <link rel="stylesheet" href="styles/larger.css">
+  <script src="scripts/navigation.js" defer></script>
+  <script src="scripts/date.js" defer></script>
+  <script src="scripts/courses.js" defer></script>
+</head>
+
+<body>
+<header>
+        <img src="images/home.svg" alt="site logo" width="512" height="512">
+        <span>WDD231 | KEHINDE OLUSEGUN ODUMOSU</span>
+        <button id="ham-btn" class="hamburger" aria-label="Menu">
+  <span></span>
+  <span></span>
+  <span></span>
+</button>
+    </header>
+
+  <nav id="nav-bar" class="navigation">
+  <ul>
+    <li><a href="index.html" class="active">Home</a></li>
+    <li><a href="#">Chamber Project</a></li>
+    <li><a href="#">Final Project</a></li>
+  </ul>
+    </nav>
+<main>
+  <h1>Home</h1>
+
+  <section class="about">
+    <h2>About Me</h2>
+    <p>Hello! My name is Kehinde Olusegun Odumosu. I was born in Shomolu Lagos Nigeria in year 1983 and currently live in Ijebu Ode, Ogun State. I am married Efe who is from Delta State Nigeria. We are both having two active boys Oriola and Eniola, 5 years old and 3 years old respectively. I am a Software Development undergraduate student at Brigham Young University, Idaho. I love spending time with my family and cooking together because they are my world. I love to learn new things and also love to teach others.</p>
+  </section>
+
+  <section class="photo">
+    <h2>Student Photo</h2>
+    <img src="images/ceo.jpg" alt="Student photo">
+  </section>
+
+  <section class="courses">
+    <h2>Web Certificate Courses</h2>
+
+    <div class="filters">
+      <button data-filter="all">All</button>
+
+<button data-filter="cse">CSE</button>
+      <button data-filter="wdd">WDD</button>
+    </div>
+
+    <div id="courseCards"></div>
+    <p id="totalCredits"></p>
+  </section>
+</main>
+
+<footer>
+   <div class="social">
+            <a href="https://www.facebook.com/share/17fkAB7axP/" target="_blank"><img src="images/facebook.svg" alt="facebook" width="16" height="16"></a>
+            <a href="https://github.com/KOdumosu" target="_blank"><img src="images/github.svg" alt="" width="16" height="16"></a>
+            <a href=" https://www.linkedin.com/in/kehinde-odumosu-82b929a9?utm_source=share&utm_campaign=share_via&utm_content=profile&utm_medium=android_app" target="_blank"><img src="images/linkedin.svg" alt="" width="16" height="16"></a>
+            <a href="https://x.com/Soulsandpassion" target="_blank"><img src="images/twitter-x.svg" alt="" width="16" height="16"></a>
+        </div>
+         <p>
+    &copy; <span id="year"></span> Kehinde • Nigeria
+  </p>
+
+  <p id="lastModified"></p>
+
+    </footer>
+</body>
+</html>
+
