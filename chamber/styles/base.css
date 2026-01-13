@@ -1,0 +1,189 @@
+/* =====================
+   CSS RESET & VARIABLES
+===================== */
+:root {
+  --primary-color: #9aa39c;
+  --secondary-color: #f4c430;
+  --background-color: #f5f5f5;
+  --text-color: #222;
+  --light-gray: #e0e0e0;
+
+  --font-family: "Poppins", Arial, sans-serif;
+}
+
+* {
+  margin: 0;
+  padding: 0;
+  box-sizing: border-box;
+}
+
+/* =====================
+   GLOBAL STYLES
+===================== */
+body {
+  font-family: var(--font-family);
+  color: var(--text-color);
+  background-color: var(--background-color);
+  line-height: 1.6;
+}
+
+img {
+  max-width: 100%;
+  height: auto;
+  display: block;
+}
+
+h1, h2, h3 {
+  font-weight: 600;
+}
+
+section {
+  padding: 1rem;
+  margin-bottom: 1rem;
+}
+
+/* =====================
+   HEADER (MOBILE)
+===================== */
+
+/* ===== Header ===== */
+header {
+  display: flex;
+  align-items: center;
+  gap: 1rem;
+  padding: 1rem;
+}
+
+header img {
+  width: 50px;
+  height: auto;
+}
+
+header span {
+  font-weight: 700;
+  font-size: 1.1rem;
+}
+
+
+
+header {
+  background-color: var(--primary-color);
+  color: white;
+}
+
+.header-content {
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+  padding: 1rem;
+}
+
+header h1 {
+  font-size: 1.1rem;
+}
+
+#menuBtn {
+  background: none;
+  border: none;
+  font-size: 1.6rem;
+  color: white;
+  cursor: pointer;
+}
+
+/* =====================
+   NAVIGATION (MOBILE)
+===================== */
+nav {
+  background-color: var(--primary-color);
+}
+
+nav ul {
+  list-style: none;
+  display: none;
+  flex-direction: column;
+}
+
+nav ul.open {
+  display: flex;
+}
+
+nav li {
+  border-top: 1px solid rgba(255,255,255,0.2);
+}
+
+nav a {
+  display: block;
+  padding: 0.75rem;
+  color: white;
+  text-decoration: none;
+}
+
+nav a:hover,
+nav a.active {
+  background-color: var(--secondary-color);
+  color: black;
+}
+
+/* =====================
+   HERO SECTION
+===================== */
+.hero {
+  position: relative;
+}
+
+.hero img {
+  width: 100%;
+}
+
+.cta-button {
+  position: absolute;
+  bottom: 1rem;
+  right: 1rem;
+  background-color: var(--secondary-color);
+  color: black;
+  padding: 0.75rem 1rem;
+  text-decoration: none;
+  font-weight: 600;
+  border-radius: 5px;
+}
+
+/* ----------EVENTS / WEATHER / FORECAST--------*/
+.events,
+.weather,
+.forecast {
+  background-color: white;
+  border-radius: 6px;
+  box-shadow: 0 2px 6px rgba(0,0,0,0.1);
+}
+
+.weather p {
+  font-size: 1.2rem;
+  margin-top: 0.5rem;
+}
+
+/* =====================
+   SPOTLIGHTS
+===================== */
+.spotlights {
+  background-color: white;
+}
+
+.spotlight {
+  border: 1px solid var(--light-gray);
+  padding: 1rem;
+  margin-bottom: 1rem;
+  border-radius: 6px;
+}
+
+/* --------FOOTER---------*/
+footer {
+  background-color: var(--primary-color);
+  color: white;
+  text-align: center;
+  padding: 1rem;
+}
+
+footer p {
+  margin: 0.25rem 0;
+  font-size: 0.9rem;
+}

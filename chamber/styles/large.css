@@ -1,0 +1,33 @@
+@media (min-width: 1024px) {
+
+  /* HEADER */
+  .header-content {
+    max-width: 1100px;
+    margin: 0 auto;
+  }
+
+  /* NAVIGATION */
+  #menuBtn {
+    display: none;
+  }
+
+  nav ul {
+    display: flex !important;
+    justify-content: center;
+  }
+
+  /* MAIN GRID */
+  main {
+    grid-template-columns: 3fr 1fr;
+  }
+
+  /* SPOTLIGHTS – 3 COLUMNS */
+  .spotlights {
+    grid-template-columns: repeat(3, 1fr);
+  }
+
+  /* FOOTER */
+  footer {
+    font-size: 1rem;
+  }
+}

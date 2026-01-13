@@ -1,0 +1,57 @@
+@media (min-width: 768px) {
+
+  /* HEADER */
+  header h1 {
+    font-size: 1.4rem;
+  }
+
+  /* NAVIGATION */
+  nav ul {
+    flex-direction: row;
+    justify-content: center;
+  }
+
+  nav li {
+    border: none;
+  }
+
+  nav a {
+    padding: 1rem;
+  }
+
+  /* MAIN LAYOUT */
+  main {
+    display: grid;
+    grid-template-columns: 2fr 1fr;
+    gap: 1rem;
+    max-width: 1100px;
+    margin: 0 auto;
+  }
+
+  /* HERO spans full width */
+  .hero {
+    grid-column: 1 / -1;
+  }
+
+  /* EVENTS + WEATHER SIDE BY SIDE */
+  .events {
+    grid-column: 1 / 2;
+  }
+
+  .weather {
+    grid-column: 2 / 3;
+  }
+
+  .forecast {
+    grid-column: 2 / 3;
+  }
+
+  /* SPOTLIGHTS */
+  .spotlights {
+    grid-column: 1 / -1;
+    display: grid;
+    grid-template-columns: repeat(2, 1fr);
+    gap: 1rem;
+  }
+
+}

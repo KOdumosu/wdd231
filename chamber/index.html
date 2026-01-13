@@ -1,0 +1,106 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <meta name="description" content="Ijebu Chamber of Commerce.  This website will serve as a resource hub for businesses in the city of Ijebu ode. The site will provide information on local events, host networking opportunities, create business directories, and encourage local shopping. It aims to promote local economic growth, support local businesses, and foster a sense of community between the businesses.">
+  <title>Ijebu Chamber of Commerce | Home</title>
+
+  <link rel="stylesheet" href="styles/base.css">
+  <link rel="stylesheet" href="styles/medium.css">
+  <link rel="stylesheet" href="styles/large.css">
+  <link rel="icon" href="ijebufavicon.ico">
+  <script src="scripts/menu.js" defer></script>
+  <script src="scripts/date.js" defer></script>
+</head>
+<body>
+
+<header>
+  <div class="header-content">
+      <img src="images/ijhome.svg" alt="site logo" width="512" height="512">
+   <h1>Ijebu Chamber of Commerce</h1>
+    <button id="menuBtn" aria-label="Open Menu">☰</button>
+  </div>
+
+  <nav id="primaryNav">
+    <ul>
+      <li><a href="index.html" class="active">Home</a></li>
+      <li><a href="directory.html">Directory</a></li>
+      <li><a href="join.html">Join</a></li>
+      <li><a href="discover.html">Discover</a></li>  
+    </ul>
+  </nav>
+</header>
+
+<main>
+
+  <!-- HERO SECTION -->
+  <section class="hero">
+    <picture>
+      <source srcset="images/hero-large.webp" media="(min-width: 768px)">
+      <img src="images/hero-small.webp" alt="Ijebu Ode business district">
+    </picture>
+
+    <a href="join.html" class="cta-button">Join the Chamber</a>
+  </section>
+
+  <!-- EVENTS -->
+  <section class="events">
+    <h2>Events</h2>
+    <p>Business Networking Night – March 20</p>
+    <p>Entrepreneurs Workshop – April 5</p>
+  </section>
+
+
+ <!-- WEATHER -->
+<section class="weather">
+  <h2>Current Weather</h2>
+  <p><span id="temp"></span>°C</p>
+  <p id="condition"></p>
+</section>
+
+<!-- FORECAST -->
+<section class="forecast">
+  <h2>Weather Forecast</h2>
+  <ul id="forecast-list"></ul>
+</section>
+
+  <!-- BUSINESS SPOTLIGHTS -->
+  <section class="spotlights">
+
+    <article class="spotlight">
+      <h3>Business Name</h3>
+      <p>Business Tagline</p>
+      <p>Email: info@email.com</p>
+      <p>Phone: +234 xxx xxx xxxx</p>
+    </article>
+
+     <article class="spotlight">
+      <h3>Business Name</h3>
+      <p>Business Tagline</p>
+      <p>Email: info@email.com</p>
+      <p>Phone: +234 xxx xxx xxxx</p>
+    </article>
+
+     <article class="spotlight">
+      <h3>Business Name</h3>
+      <p>Business Tagline</p>
+      <p>Email: info@email.com</p>
+      <p>Phone: +234 xxx xxx xxxx</p>
+    </article>
+  </section>
+
+</main>
+
+<footer>
+  <p>&copy; <span id="year"></span> Ijebu Chamber of Commerce</p>
+  <p>Ijebu Ode, Ogun State, Nigeria</p>
+  <p>info@ijebuchamber.org</p>
+  <p>WDD231 Class Project | Kehinde Odumosu</p>
+  <p></p><span id="lastModified"></span></p>
+</footer>
+
+<script src="styles/footer.js"></script>
+ <script src="scripts/weather.js"></script>
+</body>
+</html>
