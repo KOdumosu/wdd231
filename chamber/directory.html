@@ -3,48 +3,45 @@
 <head>
   <meta charset="UTF-8">
   <meta name="viewport" content="width=device-width, initial-scale=1.0">
-
-  <!-- BASIC META -->
   <title>Business Directory | Ijebu Chamber of Commerce</title>
-  <meta name="description" content="Explore trusted local businesses that are members of the Ijebu Chamber of Commerce.">
+  <meta name="description" content="Explore trusted local businesses that are members of the Ijebu Chamber of Commerce. It is officially dersigned to provide information on local events, host networking opportunities, create business directories, and encourage local shopping. It aims to promote local economic growth, support local businesses, and foster a sense of community between the businesses.">
   <meta name="author" content="Kehinde Odumosu">
-
-  <!-- FAVICON -->
   <link rel="icon" href="images/favicon.ico">
 
   <!-- FACEBOOK OPEN GRAPH META -->
   <meta property="og:title" content="Ijebu Chamber of Commerce Directory">
   <meta property="og:description" content="Discover local businesses and organizations supporting economic growth in Ijebu Ode.">
-  <meta property="og:image" content="https://yourgithubusername.github.io/wdd231/chamber/images/chamber-og.webp">
-  <meta property="og:url" content="https://yourgithubusername.github.io/wdd231/chamber/directory.html">
+  <meta property="og:image" content="https://kodumosu.github.io/wdd231/chamber/images/chamber-og.webp">
+  <meta property="og:url" content="https://KOdumosu.github.io/wdd231/chamber/directory.html">
   <meta property="og:type" content="website">
 
   <!-- NORMALIZE / RESET -->
-  <link rel="stylesheet" href="css/normalize.css">
+  <link rel="stylesheet" href="styles/normalize.css">
 
   <!-- SITE CSS -->
-  <link rel="stylesheet" href="css/base.css">
-  <link rel="stylesheet" href="css/medium.css">
-  <link rel="stylesheet" href="css/large.css">
+  <link rel="stylesheet" href="styles/base.css">
+  <link rel="stylesheet" href="styles/medium.css">
+  <link rel="stylesheet" href="styles/large.css">
 
   <!-- JS -->
-  <script src="js/menu.js" defer></script>
-  <script src="js/directory.js" defer></script>
+  <script src="scripts/menu.js" defer></script>
+  <script src="scripts/directory.js" defer></script>
 </head>
 
 <body>
 <header>
-  <div class="header-content">
-    <h1>Ijebu Chamber of Commerce</h1>
+<div class="header-content">
+      <img src="images/ijhome.svg" alt="site logo" width="512" height="512">
+   <h1>Ijebu Chamber of Commerce</h1>
     <button id="menuBtn" aria-label="Open Menu">☰</button>
   </div>
 
   <nav id="primaryNav">
     <ul>
       <li><a href="index.html">Home</a></li>
-      <li><a href="discover.html">Discover</a></li>
       <li><a href="directory.html" class="active">Directory</a></li>
       <li><a href="join.html">Join</a></li>
+      <li><a href="discover.html">Discover</a></li>
     </ul>
   </nav>
 </header>
@@ -61,15 +58,32 @@
   <!-- DIRECTORY CONTAINER -->
   <section id="members" class="grid"></section>
 </main>
-
 <footer>
-  <p>Ijebu Chamber of Commerce</p>
-  <p>Ijebu Ode, Ogun State, Nigeria</p>
-  <p>info@ijebuchamber.org</p>
-  <p>WDD 231 | Kehinde Odumosu</p>
-  <p>&copy; <span id="year"></span> | Last Modified: <span id="lastModified"></span></p>
+<section class="adress">
+<h3>Ijebu Chamber of Commerce</h3>
+  <p>10, Oke Ola, Okelamuren</p>
+    <p>info@ijebuchamber.org</p>
+  <p>Phone: +234 802 654 4083</p>
+</section>
+  
+  
+  <div class="social">
+            <a href="https://www.facebook.com/share/17fkAB7axP/" target="_blank"><img src="images/facebook.svg" alt="facebook" width="16" height="16"></a>
+            <a href="https://github.com/KOdumosu" target="_blank"><img src="images/github.svg" alt="" width="16" height="16"></a>
+            <a href=" https://www.linkedin.com/in/kehinde-odumosu-82b929a9?utm_source=share&utm_campaign=share_via&utm_content=profile&utm_medium=android_app" target="_blank"><img src="images/linkedin.svg" alt="" width="16" height="16"></a>
+            <a href="https://x.com/Soulsandpassion" target="_blank"><img src="images/twitter-x.svg" alt="" width="16" height="16"></a>
+        </div>
+
+
+<section class="Ownerside">
+<h3>WDD231 Class Project</h3>
+<p>Odumosu Kehinde</p>
+<p>&copy; <span id="year"></span> Ijebu Chamber of Commerce</p>
+<p><span id="lastModified"></span></p>
+</section>
 </footer>
 
-<script src="js/footer.js"></script>
+
+<script src="scripts/footer.js"></script>
 </body>
 </html>

@@ -1,0 +1,67 @@
+{
+  "members": [
+    {
+      "name": "IDWEB",
+      "address": "2115 S Vista Avenue Boise ID 83705",
+      "phone": "(208) 342-9386",
+      "website": "https://idahowebsites.com/",
+      "image": "idweb.webp",
+      "level": 3,
+      "description": "Professional web design and digital marketing services."
+    },
+    {
+      "name": "Surge Tech",
+      "address": "14 Oke-Aje Street, Ijebu Ode",
+      "phone": "+234 803 456 7890",
+      "website": "https://surgetech.com",
+      "image": "surge.webp",
+      "level": 2,
+      "description": "Technology solutions for modern businesses."
+    },
+    {
+      "name": "GraphicZen Studio",
+      "address": "21 Imagbon Road, Ijebu Ode",
+      "phone": "+234 812 555 3322",
+      "website": "https://graphiczen.com",
+      "image": "graphiczen.webp",
+      "level": 1,
+      "description": "Creative branding and graphic design studio."
+    },
+    {
+      "name": "Ogun Farms Ltd",
+      "address": "Farm Settlement Road, Ogun State",
+      "phone": "+234 805 998 1122",
+      "website": "https://ogunfarms.com",
+      "image": "ogunfarms.webp",
+      "level": 2,
+      "description": "Agricultural production and food processing."
+    },
+    {
+      "name": "Ijebu Microfinance Bank",
+      "address": "Bank Road, Ijebu Ode",
+      "phone": "+234 814 223 1100",
+      "website": "https://ijebumfb.com",
+      "image": "ijebubank.webp",
+      "level": 3,
+      "description": "Financial services supporting local businesses."
+    },
+    {
+      "name": "BrightPath Logistics",
+      "address": "Warehouse District, Ijebu Ode",
+      "phone": "+234 809 332 4455",
+      "website": "https://brightpathlogistics.com",
+      "image": "brightpath.webp",
+      "level": 1,
+      "description": "Reliable logistics and delivery services."
+    },
+    {
+      "name": "PalmView Hotels",
+      "address": "Tourism Avenue, Ijebu Ode",
+      "phone": "+234 701 556 8899",
+      "website": "https://palmviewhotels.com",
+      "image": "palmview.webp",
+      "level": 3,
+      "description": "Luxury hospitality and event hosting."
+    }
+  ]
+}

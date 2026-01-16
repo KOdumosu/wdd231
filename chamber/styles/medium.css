@@ -33,17 +33,10 @@
     grid-column: 1 / -1;
   }
 
-  /* EVENTS + WEATHER SIDE BY SIDE */
-  .events {
-    grid-column: 1 / 2;
-  }
-
-  .weather {
-    grid-column: 2 / 3;
-  }
-
-  .forecast {
-    grid-column: 2 / 3;
+  /* EVENTS / WEATHER / FORECAST
+     Stack naturally on tablet */
+  .home-panels {
+    display: block;
   }
 
   /* SPOTLIGHTS */
@@ -54,4 +47,8 @@
     gap: 1rem;
   }
 
+  /* FOOTER */
+  footer {
+    font-size: 1rem;
+  }
 }
