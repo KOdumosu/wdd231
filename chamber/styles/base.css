@@ -5,6 +5,8 @@
   --background-color: #e2f5e8;
   --text-color: #222;
   --light-gray: #e0e0e0;
+  --panel-bg: #dbdad9;
+  --footer-bg: #e5e5e5;
 
   --font-family: "Poppins", Arial, sans-serif;
 }
@@ -44,6 +46,8 @@ header {
   align-items: center;
   gap: 1rem;
   padding: 1rem;
+  background-color: var(--primary-color);
+  color: white;
 }
 
 header img {
@@ -54,13 +58,6 @@ header img {
 header span {
   font-weight: 700;
   font-size: 1.1rem;
-}
-
-
-
-header {
-  background-color: var(--primary-color);
-  color: white;
 }
 
 .header-content {
@@ -139,7 +136,7 @@ nav a.active {
 .events,
 .weather,
 .forecast {
-  background-color: rgb(219, 218, 217);
+  background-color: var(--panel-bg);
   border-radius: 6px;
   box-shadow: 0 2px 6px rgba(0,0,0,0.1);
   padding: 1rem;
@@ -240,7 +237,7 @@ nav a.active {
 
 /* --------FOOTER---------*/
 footer {
-  background-color: #e5e5e5;
+  background-color: var(--footer-bg);
   padding: 1rem 0.75rem;  
   display: flex;
   flex-direction: column;

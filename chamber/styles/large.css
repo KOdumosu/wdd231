@@ -50,12 +50,7 @@
   /* =====================
      SPOTLIGHTS – 3 COLUMNS
   ===================== */
-  .spotlights {
-    display: grid;
-    grid-template-columns: repeat(3, 1fr);
-    gap: 1rem;
-  }
-
+  
   /* =====================
      FOOTER – 3 BLOCK LAYOUT
   ===================== */
