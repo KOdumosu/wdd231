@@ -71,9 +71,13 @@ header span {
 
 .header-content {
   display: flex;
-  justify-content: space-between;
   align-items: center;
-  padding: 1rem;
+  gap: 1rem;
+
+  max-width: 1100px;
+  margin: 0 auto;
+  padding-inline: 4rem; 
+  justify-content: space-between;
 }
 
 header h1 {
@@ -125,6 +129,11 @@ nav a.active {
   position: relative;
 }
 
+.hero {
+  max-width: 1100px;
+  margin: 0 auto;
+  padding-inline: 1rem;
+}
 .hero img {
   width: 100%;
 }
