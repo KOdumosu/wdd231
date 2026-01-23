@@ -194,11 +194,6 @@ nav a.active {
   overflow: hidden; /* keeps header clean */
 }
 
-.home-panels {
-  display: flex;
-  flex-direction: column;
-  gap: 1rem;
-}
 
 #members {
   max-width: 1200px;
