@@ -2,11 +2,12 @@
 :root {
   --primary-color: #9aa39c;
   --secondary-color: #f4c430;
-  --background-color: #f7f7f7;
+  --background-color: #e2f5e8;
   --text-color: #222;
   --light-gray: #e0e0e0;
   --panel-bg: #dbdad9;
   --footer-bg: #e5e5e5;
+  --dark-header: #302e2e;
 
   --font-family: "Poppins", Arial, sans-serif;
 }
@@ -23,6 +24,14 @@ body {
   color: var(--text-color);
   background-color: var(--background-color);
   line-height: 1.6;
+}
+.highlight-title {
+  color: blue;
+}
+
+.gold-text {
+  color: gold;
+  text-align: center;
 }
 
 img {
@@ -166,7 +175,6 @@ nav a.active {
 .forecast ul,
 .weather-details {
   padding: 0.45rem 1rem;
-  text-align: center;
 }
 
 .events,
@@ -202,10 +210,6 @@ nav a.active {
   margin-bottom: 0.75rem;
 }
 
-.spotlights {
-  display: grid;
-  gap: 1rem;
-}
 .member-card {
   background-color: #ffffff;
   padding: 1.5rem 1rem;
