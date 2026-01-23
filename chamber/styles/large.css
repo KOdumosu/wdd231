@@ -5,10 +5,7 @@
     max-width: 1100px;
     margin: 0 auto;
   }
-  .site-title {
-    margin-left: 0.25rem;
-    justify-self: start;
-  }
+
 
   /* ===================== NAVIGATION ==================== */
   #menuBtn {
