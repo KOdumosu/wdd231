@@ -3,15 +3,34 @@
 <head>
   <meta charset="UTF-8">
   <meta name="viewport" content="width=device-width, initial-scale=1.0">
-  <meta name="description" content="Ijebu Chamber of Commerce. This website will serve as a resource hub for businesses in the city of Ijebu ode. The site will provide information on local events, host networking opportunities, create business directories, and encourage local shopping. It aims to promote local economic growth, support local businesses, and foster a sense of community between the businesses.">
-  <title>Ijebu Chamber of Commerce | Home</title>
 
+  <!-- META DATA -->
+  <title>Ijebu Chamber of Commerce | Home</title>
+  <meta name="description" content="Ijebu Chamber of Commerce connects local businesses through events, directories, and community-driven economic growth in Ijebu Ode.">
+  <meta name="author" content="Odumosu Kehinde">
+
+  <!-- OPEN GRAPH / SOCIAL MEDIA -->
+  <meta property="og:title" content="Ijebu Chamber of Commerce">
+  <meta property="og:description" content="Supporting businesses in Ijebu Ode through networking, events, and local economic development.">
+  <meta property="og:image" content="https://kodumosu.github.io/wdd231-chamber/images/og-image.webp">
+  <meta property="og:url" content="https://kodumosu.github.io/wdd231-chamber/">
+  <meta property="og:type" content="website">
+
+  <!-- GOOGLE FONTS -->
+  <link rel="preconnect" href="https://fonts.googleapis.com">
+  <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+  <link href="https://fonts.googleapis.com/css2?family=Roboto:wght@400;700&display=swap" rel="stylesheet">
   <link rel="stylesheet" href="styles/base.css">
   <link rel="stylesheet" href="styles/medium.css">
   <link rel="stylesheet" href="styles/large.css">
+
+  <!-- FAVICON -->
   <link rel="icon" href="ijebufavicon.ico">
+
+  <!-- SCRIPTS -->
   <script src="scripts/menu.js" defer></script>
   <script src="scripts/date.js" defer></script>
+  <script src="scripts/weather.js" defer></script>
 </head>
 <body>
 
@@ -56,8 +75,18 @@
 
 <section class="weather">
   <h2>Current Weather</h2>
-  <p><span id="temp"></span>°C</p>
-  <p id="condition"></p>
+  <div class="weather-details">
+    <figure class="weather-icon">
+      <img id="weather-icon" src="" alt="">
+    </figure>
+    <p class="temp"><span id="temp"></span>°F</p>
+    <p id="condition"></p>
+    <p>High: <span id="high"></span>°</p>
+    <p>Low: <span id="low"></span>°</p>
+    <p>Humidity: <span id="humidity"></span>%</p>
+    <p>Sunrise: <span id="sunrise"></span></p>
+    <p>Sunset: <span id="sunset"></span></p>
+  </div>
 </section>
 
 <section class="forecast">
@@ -66,30 +95,55 @@
 </section>
 </div>
 <br>
-  <!-- BUSINESS SPOTLIGHTS -->
-  <section class="spotlights">
+ <!-- BUSINESS SPOTLIGHTS -->
+<section class="spotlights">
+  <article class="spotlight">
+    <h3 style="color: blue;">Business Name</h3>
+    <p class="tagline" style="color: gold">Business Tag Line</p>
+    <hr>
 
-    <article class="spotlight">
-      <h3>Business Name</h3>
-      <p>Business Tagline</p>
-      <p>Email: info@email.com</p>
-      <p>Phone: +234 xxx xxx xxxx</p>
-    </article>
+    <div class="spotlight-info">
+      <img src="images/business1.webp" alt="Business logo" width="80" height="80">
 
-     <article class="spotlight">
-      <h3>Business Name</h3>
-      <p>Business Tagline</p>
-      <p>Email: info@email.com</p>
-      <p>Phone: +234 xxx xxx xxxx</p>
-    </article>
+      <div class="contact">
+        <p>Email: info@email.com</p>
+        <p>Phone: +234 xxx xxx xxxx</p>
+        <p>URL: www.businessname.com</p>
+      </div>
+    </div>
+  </article>
 
-     <article class="spotlight">
-      <h3>Business Name</h3>
-      <p>Business Tagline</p>
-      <p>Email: info@email.com</p>
-      <p>Phone: +234 xxx xxx xxxx</p>
-    </article>
-  </section>
+  <article class="spotlight">
+    <h3 style="color: blue;">Business Name</h3>
+    <p class="tagline" style="color: gold">Business Tag Line</p>
+    <hr>
+    <div class="spotlight-info">
+      <img src="images/business2.webp" alt="Business logo" width="80" height="80">
+
+      <div class="contact">
+        <p>Email: info@email.com</p>
+        <p>Phone: +234 xxx xxx xxxx</p>
+        <p>URL: www.businessname.com</p>
+      </div>
+    </div>
+  </article>
+
+  <article class="spotlight">
+    <h3 style="color: blue;">Business Name</h3>
+    <p class="tagline" style="color: gold">Business Tag Line</p>
+    <hr>
+
+    <div class="spotlight-info">
+      <img src="images/business3.webp" alt="Business logo" width="80" height="80">
+
+      <div class="contact">
+        <p>Email: info@email.com</p>
+        <p>Phone: +234 xxx xxx xxxx</p>
+        <p>URL: www.businessname.com</p>
+      </div>
+    </div>
+  </article>
+</section>
 
 </main>
 
