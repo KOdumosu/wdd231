@@ -1,0 +1,341 @@
+
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+
+  <!-- META DATA -->
+  <title>Ijebu Chamber of Commerce | Join</title>
+  <meta name="description" content="Ijebu Chamber of Commerce connects local businesses through events, directories, and community-driven economic growth in Ijebu Ode.">
+  <meta name="author" content="Odumosu Kehinde">
+
+  <!-- OPEN GRAPH / SOCIAL MEDIA -->
+  <meta property="og:title" content="Ijebu Chamber of Commerce">
+  <meta property="og:description" content="Supporting businesses in Ijebu Ode through networking, events, and local economic development.">
+  <meta property="og:image" content="og-image.webp">
+  <meta property="og:url" content="https://kodumosu.github.io/wdd231-chamber/">
+  <meta property="og:type" content="website">
+
+  <!-- GOOGLE FONTS -->
+  <link rel="preconnect" href="https://fonts.googleapis.com">
+  <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+  <link href="https://fonts.googleapis.com/css2?family=Roboto:wght@400;700&display=swap" rel="stylesheet">
+  <link rel="stylesheet" href="styles/base.css">
+  <link rel="stylesheet" href="styles/medium.css">
+  <link rel="stylesheet" href="styles/large.css">
+
+  <!-- FAVICON -->
+  <link rel="icon" href="ijebufavicon.ico">
+
+  <!-- SCRIPTS -->
+  <script src="scripts/menu.js" defer></script>
+  <script src="scripts/date.js" defer></script>
+  <script src="scripts/weather.js" defer></script>
+</head>
+<body>
+
+<header>
+  <div class="header-content">
+    <img src="images/ijhome.svg" alt="site logo" width="512" height="512">
+    <span class="site-title">Ijebu Chamber of Commerce</span>
+    <button id="menuBtn">☰</button>
+  </div>
+
+  <nav id="primaryNav">
+    <ul>
+      <li><a href="index.html" class="active">Home</a></li>
+      <li><a href="directory.html">Directory</a></li>
+      <li><a href="join.html">Join</a></li>
+      <li><a href="discover.html">Discover</a></li>  
+    </ul>
+  </nav>
+</header>
+<main class="join-page">
+  <h1>Join the Chamber</h1>
+  <br>
+
+  <div class="join-container">
+    <!-- FORM -->
+     
+    
+    <form method="get" action="thankyou.html" class="join-form">
+      <input type="hidden" name="timestamp" id="timestamp">
+      
+      <label>
+        First Name
+        <input type="text" name="fname" required title="First Name"
+               autocomplete="given-name">
+      </label>
+
+      <label>
+        Last Name
+        <input type="text" name="lname" required title="Last Name"
+               autocomplete="family-name">
+      </label>
+
+      <label>
+        Organizational Title
+        <input type="text" name="orgtitle"
+               title="Your title in the organization"
+               autocomplete="organization-title"
+               pattern="[A-Za-z\- ]{7,}">
+      </label>
+
+      <label>
+        Email
+        <input type="email" name="email" required title="Email Address"
+               autocomplete="email"
+               placeholder="example@email.com">
+      </label>
+
+      <label>
+        Mobile Phone
+        <input type="tel" name="phone" required title="Mobile Phone"
+               autocomplete="tel">
+      </label>
+
+      <label>
+        Organization Name
+        <input type="text" name="organization" required
+               title="Business or Organization Name"
+               autocomplete="organization">
+      </label>
+
+
+
+    <fieldset class="membership-fieldset">
+  <legend>Membership Levels</legend>
+
+  <label>
+    <input type="radio" name="membership" value="np">
+    NP Membership
+  </label>
+
+  <label>
+    <input type="radio" name="membership" value="bronze">
+    Bronze Membership
+  </label>
+
+  <label>
+    <input type="radio" name="membership" value="silver">
+    Silver Membership
+  </label>
+
+  <label>
+    <input type="radio" name="membership" value="gold">
+    Gold Membership
+  </label>
+</fieldset>
+
+
+      <label>
+        Business Description
+        <textarea name="description" title="Business Description"></textarea>
+      </label>
+
+      <!-- Hidden Timestamp -->
+      <input type="hidden" name="timestamp" id="timestamp">
+
+      <input type="submit" value="Apply for Membership">
+    </form>
+
+    <!-- MEMBERSHIP CARDS -->
+    <section class="membership-cards">
+  <h2>Membership Levels</h2>
+
+  <div class="card np slide-in" style="--delay: 0s;">
+    <p class="level-title">Non Profit Membership Level</p>
+    <span class="learn-more" data-modal="npModal">Learn More</span>
+  </div>
+
+  <div class="card bronze slide-in" style="--delay: .15s;">
+    <p class="level-title">Bronze Membership Level</p>
+    <span class="learn-more" data-modal="bronzeModal">Learn More</span>
+  </div>
+
+  <div class="card silver slide-in" style="--delay: .3s;">
+    <p class="level-title">Silver Membership Level</p>
+    <span class="learn-more" data-modal="silverModal">Learn More</span>
+  </div>
+
+  <div class="card gold slide-in" style="--delay: .45s;">
+    <p class="level-title">Gold Membership Level</p>
+    <span class="learn-more" data-modal="goldModal">Learn More</span>
+  </div>
+</section>
+
+  <!-- MODALS -->
+  <dialog id="npModal" class="membership-modal" aria-labelledby="npTitle">
+  <h3 id="npTitle">Non-Profit Membership</h3>
+    <p>Cost: Free</p>
+    <P>Validity: 12 months</P>
+    <p>Renewal: Annually</p>
+    <br>
+
+     <h2><P>Overview</P></h2>
+
+<p>The Non-Profit (NP) Membership is designed for registered non-profit organizations, community groups, charities, and associations that support local development but operate with limited funding.</p>
+<br>
+
+  <h2><p>Benefits:</p></h2>
+
+<p>•Basic listing in the organization’s online directory</p>
+
+<p>•Access to newsletters and important announcements</p>
+
+<p>•Invitations to selected community events and workshops</p>
+
+<p>•Opportunity to participate in outreach and advocacy programs</p>
+
+<p>•Networking opportunities with businesses and other non-profits</p>
+
+<p>•Ideal for:
+Non-profit organizations seeking visibility, connection, and community engagement without financial commitment.</p>
+     <button
+    class="apply-btn"
+    data-membership="np">
+    Apply for this Membership
+  </button>
+
+  <button class="close-btn">Close</button>
+</dialog>
+
+
+  <dialog id="bronzeModal" class="membership-modal" aria-labelledby="bronzeTitle">
+  <h3 id="bronzeTitle">Bronze Membership</h3>
+    <p>Cost: ₦30,000 per year</p> 
+<p>Validity: 12 months</p>
+<p>Renewal: Annually</p>
+<br>
+
+<h2>Overview</h2>
+
+<p>The Bronze Membership offers essential benefits for small businesses and startups looking to establish their presence and connect within the business community.
+
+<h2><p>Benefits:</p></h2>
+
+<p>•Standard business listing in the online directory</p>
+
+<p>•Access to member-only newsletters and updates</p>
+
+<p>•Invitations to networking events and training sessions</p>
+
+<p>•Eligibility to attend business seminars and workshops</p>
+
+<p>•Use of the membership badge on business materials</p>
+
+<p>•Ideal for:
+Startups and small businesses that want basic exposure and networking opportunities.</p>
+   <button
+    class="apply-btn"
+    data-membership="bronze">
+    Apply for this Membership
+  </button>
+
+  <button class="close-btn">Close</button>
+</dialog>
+
+
+  <dialog id="silverModal" class="membership-modal" aria-labelledby="silverTitle">
+  <h3 id="silverTitle">Silver Membership</h3>
+    <p>Cost: ₦55,000 per year </p>
+<p>Validity: 12 months</p>
+<p>Renewal: Annually</p>
+<br>
+<h2>Overview</h2>
+
+<p>The Silver Membership provides enhanced visibility and added benefits for growing businesses that want stronger engagement and promotional opportunities.</p>
+<br>
+<h2><p>Benefits:</p></h2>
+
+<p>•Featured business listing in the online directory</p>
+
+<p>•Priority access to networking events and workshops</p>
+
+<p>•Discounts on event registrations and training programs</p>
+
+<p>•Opportunities to collaborate on community projects</p>
+
+<p>•Business promotion through selected digital platforms</p>
+
+<p>•Access to business development resources and support</p>
+
+<p>Ideal for:
+Established businesses seeking increased exposure, growth support, and stronger professional connections.</p>
+    <button
+    class="apply-btn"
+    data-membership="silver">
+    Apply for this Membership
+  </button>
+
+  <button class="close-btn">Close</button>
+</dialog>
+
+  <dialog id="goldModal" class="membership-modal" aria-labelledby="goldTitle">
+  <h3 id="goldTitle">Gold Membership</h3>
+    <h2><p>Cost: ₦80,000 per year </p><h2></h2>
+<p>Validity: 12 months</p>
+<p>Renewal: Annually</p>
+
+<h2>Overview</h2>
+
+<p>The Gold Membership is a premium option offering maximum visibility, influence, and exclusive access to high-value opportunities within the organization.</p>
+<br>
+<h2><p>Benefits:</p></h2>
+
+<p>•Premium featured listing at the top of the online directory</p>
+
+<p>•Priority sponsorship and advertising opportunities</p>
+
+<p>•Exclusive invitations to executive and VIP events</p>
+
+<p>•Recognition as a key supporter on the website and at events</p>
+
+<p>•First access to partnership and collaboration opportunities</p>
+
+<p>•Personalized business support and consultation opportunities</p>
+
+<p>•Greater influence in organizational programs and initiatives</p>
+
+<p>Ideal for:
+Large businesses, corporate organizations, and sponsors seeking top-tier visibility and leadership presence.</p>
+    <button 
+    class="apply-btn" 
+    data-membership="gold">
+    Apply for this Membership
+  </button>
+
+  <button class="close-btn">Close</button>
+</dialog>
+</main>
+
+<script src="scripts/join.js"></script>
+<br>
+
+<footer>
+<section class="adress">
+<h3>Ijebu Chamber of Commerce</h3>
+  <p>10, Oke Ola, Okelamuren</p>
+    <p>info@ijebuchamber.org</p>
+  <p>Phone: +234 802 654 4083</p>
+</section>
+  
+  
+  <div class="social">
+            <a href="https://www.facebook.com/share/17fkAB7axP/" target="_blank"><img src="images/facebook.svg" alt="facebook" width="16" height="16"></a>
+            <a href="https://github.com/KOdumosu" target="_blank"><img src="images/github.svg" alt="" width="16" height="16"></a>
+            <a href=" https://www.linkedin.com/in/kehinde-odumosu-82b929a9?utm_source=share&utm_campaign=share_via&utm_content=profile&utm_medium=android_app" target="_blank"><img src="images/linkedin.svg" alt="" width="16" height="16"></a>
+            <a href="https://x.com/Soulsandpassion" target="_blank"><img src="images/twitter-x.svg" alt="" width="16" height="16"></a>
+        </div>
+
+
+<section class="Ownerside">
+<h3>WDD231 Class Project</h3>
+<p>Odumosu Kehinde</p>
+<p>&copy; <span id="year"></span> Ijebu Chamber of Commerce</p>
+<p><span id="lastModified"></span></p>
+</section>
+</footer>
+</body>
+</html>

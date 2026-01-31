@@ -19,11 +19,211 @@
 }
 
 
+/* ================= JOIN FORM ================= */
+
+.join-form label {
+  display: flex;
+  flex-direction: column;
+  gap: 0.3rem;
+  font-weight: 600;
+  margin-bottom: 0.75rem;
+  font-size: 0.9rem;
+}
+
+.join-form input,
+.join-form textarea {
+  padding: 0.5rem;
+  font-size: 1rem;
+  max-width: 480px;
+  min-height: 35px;
+  resize: vertical;
+  box-sizing: border-box;
+}
+
+
+/* ================= MEMBERSHIP CARDS ================= */
+
+.membership-cards {
+  display: flex;
+  flex-direction: column;
+  gap: 1rem;
+}
+
+.membership-cards h2 {
+  margin-bottom: 0.5rem;
+}
+
+.card {
+  min-height: 95px;
+  padding: 1.25rem;
+  border-radius: 14px;
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
+  align-items: center;
+  text-align: center;
+  cursor: pointer;
+  color: #fff;
+  box-shadow: 0 8px 20px rgba(0,0,0,0.15);
+}
+
+/* Card title */
+.level-title {
+  font-size: 1.05rem;
+  font-weight: 600;
+  margin-bottom: 0.4rem;
+}
+
+/* Learn more white box */
+.learn-more {
+  background-color: #ffffff;
+  color: #000;
+  padding: 0.35rem 1.1rem;
+  border-radius: 6px;
+  font-size: 0.85rem;
+  font-weight: 600;
+  cursor: pointer;
+  display: inline-block;
+  box-shadow: 0 2px 6px rgba(0,0,0,0.2);
+}
+
+.learn-more:hover {
+  background-color: #f2f2f2;
+}
+
+
+/* ================= CARD COLORS ================= */
+
+.card.np {
+  background: linear-gradient(135deg, #6c757d, #495057);
+}
+
+.card.bronze {
+  background: linear-gradient(135deg, #cd7f32, #b87333);
+}
+
+.card.silver {
+  background: linear-gradient(135deg, #adb5bd, #6c757d);
+}
+
+.card.gold {
+  background: linear-gradient(135deg, #f4c430, #d4af37);
+}
+
+
+/* ================= CARD HIGHLIGHT ================= */
+
+.card.active {
+  outline: 3px solid rgba(255,255,255,0.85);
+  box-shadow:
+    0 0 0 4px rgba(0,0,0,0.25),
+    0 12px 30px rgba(0,0,0,0.35);
+  transform: scale(1.02);
+}
+
+
+/* ================= CARD ENTRY ANIMATION ================= */
+
+.slide-in {
+  opacity: 0;
+  transform: translateX(80px);
+  animation: slideIn 0.6s ease-out forwards;
+  animation-delay: var(--delay);
+}
+
+@keyframes slideIn {
+  to {
+    opacity: 1;
+    transform: translateX(0);
+  }
+}
+
+
+/* ================= MEMBERSHIP FIELDSET ================= */
+
+.membership-fieldset {
+  display: flex;
+  flex-wrap: wrap;
+  gap: 0.75rem 1.25rem;
+  max-width: 100%;
+  padding: 0.75rem 1rem;
+  margin-bottom: 1rem;
+}
+
+.membership-fieldset legend {
+  width: 100%;
+  font-weight: 600;
+  margin-bottom: 0.5rem;
+}
+
+.check-option {
+  display: flex;
+  align-items: center;
+  gap: 0.35rem;
+  padding: 0.35rem 0.6rem;
+  border-radius: 6px;
+  cursor: pointer;
+  white-space: nowrap;
+  background-color: rgba(0, 0, 0, 0.05);
+}
+
+.check-option:hover {
+  background-color: rgba(0, 0, 0, 0.12);
+}
+
+.membership-fieldset input[type="radio"] {
+  accent-color: #1e6f5c;
+}
+
+
+/* ================= DIALOG / MODAL ================= */
+
+.membership-modal {
+  position: absolute;
+  width: 100%;
+  max-width: 320px;
+  max-height: calc(100vh - 40px);
+  padding: 1.5rem;
+  border-radius: 12px;
+  border: none;
+  overflow-y: auto;
+  box-shadow: 0 10px 30px rgba(0,0,0,0.25);
+
+  opacity: 0;
+  transform: translateY(15px) scale(0.98);
+  transition: opacity 0.25s ease, transform 0.25s ease;
+}
+
+.membership-modal[open] {
+  opacity: 1;
+  margin: auto;
+  transform: translateY(0) scale(1);
+}
+
+.membership-modal::backdrop {
+  background: rgba(0,0,0,0.4);
+}
+
+main {
+  padding: 2rem 1rem 3rem;
+   flex: 1;
+}
+
+.summary {
+  max-width: 600px;
+  background-color: #f8f8f6;
+  padding: 1.5rem;
+  border-radius: 10px;
+}
+
+/*------------------------*/
+
 body {
   font-family: var(--font-family);
   color: var(--text-color);
   background-color: var(--background-color);
   line-height: 1.6;
+  height: 100%;
 }
 .highlight-title {
   color: blue;
@@ -185,6 +385,11 @@ nav a.active {
   padding: 0.45rem 1rem;
 }
 
+.join-container {
+    grid-template-columns: 2fr 1fr;
+    align-items: start;
+  }
+
 .events,
 .weather,
 .forecast {
@@ -236,6 +441,7 @@ nav a.active {
 
 .member-card h3 {
   margin: 0 0 0.25rem;
+  
 }
 
 .member-card p {
@@ -388,3 +594,4 @@ footer .social img {
   width: 28px;
   height: 28px;
 }
+

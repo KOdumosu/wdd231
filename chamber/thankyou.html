@@ -1,0 +1,104 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+
+  <!-- META DATA -->
+  <title>Ijebu Chamber of Commerce | Thank You</title>
+  <meta name="description" content="Ijebu Chamber of Commerce connects local businesses through events, directories, and community-driven economic growth in Ijebu Ode.">
+  <meta name="author" content="Odumosu Kehinde">
+
+  <!-- OPEN GRAPH / SOCIAL MEDIA -->
+  <meta property="og:title" content="Ijebu Chamber of Commerce">
+  <meta property="og:description" content="Supporting businesses in Ijebu Ode through networking, events, and local economic development.">
+  <meta property="og:image" content="og-image.webp">
+  <meta property="og:url" content="https://kodumosu.github.io/wdd231-chamber/">
+  <meta property="og:type" content="website">
+
+  <!-- GOOGLE FONTS -->
+  <link rel="preconnect" href="https://fonts.googleapis.com">
+  <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+  <link href="https://fonts.googleapis.com/css2?family=Roboto:wght@400;700&display=swap" rel="stylesheet">
+  <link rel="stylesheet" href="styles/base.css">
+  <link rel="stylesheet" href="styles/medium.css">
+  <link rel="stylesheet" href="styles/large.css">
+
+  <!-- FAVICON -->
+  <link rel="icon" href="ijebufavicon.ico">
+
+  <!-- SCRIPTS -->
+  <script src="scripts/menu.js" defer></script>
+  <script src="scripts/date.js" defer></script>
+  <script src="scripts/weather.js" defer></script>
+</head>
+<body>
+
+<header>
+  <div class="header-content">
+    <img src="images/ijhome.svg" alt="site logo" width="512" height="512">
+    <span class="site-title">Ijebu Chamber of Commerce</span>
+    <button id="menuBtn">☰</button>
+  </div>
+
+  <nav id="primaryNav">
+    <ul>
+      <li><a href="index.html" class="active">Home</a></li>
+      <li><a href="directory.html">Directory</a></li>
+      <li><a href="join.html">Join</a></li>
+      <li><a href="discover.html">Discover</a></li>  
+    </ul>
+  </nav>
+</header>
+
+<main>
+  <h1>Thank You for Joining!</h1>
+
+  <section class="summary">
+    <p><strong>First Name:</strong> <span id="fname"></span></p>
+    <p><strong>Last Name:</strong> <span id="lname"></span></p>
+    <p><strong>Email:</strong> <span id="email"></span></p>
+    <p><strong>Phone:</strong> <span id="phone"></span></p>
+    <p><strong>Organization:</strong> <span id="organization"></span></p>
+    <p><strong>Date Submitted:</strong> <span id="timestamp"></span></p>
+  </section>
+</main>
+
+<script>
+  const params = new URLSearchParams(window.location.search);
+  ["fname","lname","email","phone","organization","timestamp"]
+    .forEach(id => {
+      document.getElementById(id).textContent = params.get(id);
+    });
+
+    
+</script>
+
+
+
+<footer>
+<section class="adress">
+<h3>Ijebu Chamber of Commerce</h3>
+  <p>10, Oke Ola, Okelamuren</p>
+    <p>info@ijebuchamber.org</p>
+  <p>Phone: +234 802 654 4083</p>
+</section>
+  
+  
+  <div class="social">
+            <a href="https://www.facebook.com/share/17fkAB7axP/" target="_blank"><img src="images/facebook.svg" alt="facebook" width="16" height="16"></a>
+            <a href="https://github.com/KOdumosu" target="_blank"><img src="images/github.svg" alt="" width="16" height="16"></a>
+            <a href=" https://www.linkedin.com/in/kehinde-odumosu-82b929a9?utm_source=share&utm_campaign=share_via&utm_content=profile&utm_medium=android_app" target="_blank"><img src="images/linkedin.svg" alt="" width="16" height="16"></a>
+            <a href="https://x.com/Soulsandpassion" target="_blank"><img src="images/twitter-x.svg" alt="" width="16" height="16"></a>
+        </div>
+
+
+<section class="Ownerside">
+<h3>WDD231 Class Project</h3>
+<p>Odumosu Kehinde</p>
+<p>&copy; <span id="year"></span> Ijebu Chamber of Commerce</p>
+<p><span id="lastModified"></span></p>
+</section>
+</footer>
+</body>
+</html>
