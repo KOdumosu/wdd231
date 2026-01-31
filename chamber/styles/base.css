@@ -67,6 +67,8 @@
   box-shadow: 0 8px 20px rgba(0,0,0,0.15);
 }
 
+
+
 /* Card title */
 .level-title {
   font-size: 1.05rem;
@@ -324,15 +326,14 @@ nav a.active {
 }
 
 /* =====================HERO SECTION===================== */
-.hero {
-  position: relative;
-}
 
 .hero {
+  position: relative;
   max-width: 1100px;
   margin: 0 auto;
   padding-inline: 1rem;
 }
+
 .hero img {
   width: 100%;
 }
