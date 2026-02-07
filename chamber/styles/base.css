@@ -565,6 +565,72 @@ nav a.active {
   font-size: 0.85rem;
 }
 
+.discover-grid {
+  display: grid;
+  grid-template-areas:
+    "card1"
+    "card2"
+    "card3"
+    "card4"
+    "card5"
+    "card6"
+    "card7"
+    "card8";
+  gap: 1rem;
+}
+
+.card1 { grid-area: card1; }
+.card2 { grid-area: card2; }
+.card3 { grid-area: card3; }
+.card4 { grid-area: card4; }
+.card5 { grid-area: card5; }
+.card6 { grid-area: card6; }
+.card7 { grid-area: card7; }
+.card8 { grid-area: card8; }
+
+
+
+
+@media (min-width: 641px) {
+  .discover-grid {
+    grid-template-areas:
+      "card1 card2"
+      "card3 card4"
+      "card5 card6"
+      "card7 card8"
+      "card9 card10";
+  }
+}
+
+@media (min-width: 1025px) {
+  .discover-grid {
+    grid-template-areas:
+      "card1 card2 card3"
+      "card4 card5 card6"
+      "card7 card8 card9"
+      "card10";
+  }
+}
+
+.card {
+  background: #b8b4b4;
+  border-radius: 8px;
+  padding: 0.75rem;
+}
+
+.card img {
+  width: 100%;
+  height: auto;
+}
+
+button {
+  width: 100%;
+  background: #f6b500;
+  border: none;
+  padding: 0.6rem;
+  font-weight: bold;
+}
+
 
 /* --------FOOTER---------*/
 footer {

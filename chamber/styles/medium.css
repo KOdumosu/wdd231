@@ -39,6 +39,32 @@
     display: block;
   }
 
+  @media (min-width: 641px) {
+  .card {
+    display: grid;
+    grid-template-columns: 40% 60%;
+    grid-template-areas:
+      "image title"
+      "image address"
+      "image desc"
+      "image button";
+    gap: 0.5rem;
+  }
+
+  figure { grid-area: image; }
+  h2 { grid-area: title; }
+  address { grid-area: address; }
+  p { grid-area: desc; }
+  button { grid-area: button; }
+
+  .card img:hover {
+    filter: brightness(1.1);
+    transform: scale(1.03);
+    transition: 0.3s ease;
+  }
+}
+
+
   /* SPOTLIGHTS */
   .spotlights {
     grid-column: 1 / -1;
