@@ -65,8 +65,9 @@
   cursor: pointer;
   color: #fff;
   box-shadow: 0 8px 20px rgba(0,0,0,0.15);
+  background: #b8b4b4;
+  
 }
-
 
 
 /* Card title */
@@ -612,11 +613,7 @@ nav a.active {
   }
 }
 
-.card {
-  background: #b8b4b4;
-  border-radius: 8px;
-  padding: 0.75rem;
-}
+
 
 .card img {
   width: 100%;
@@ -661,4 +658,3 @@ footer .social img {
   width: 28px;
   height: 28px;
 }
-
