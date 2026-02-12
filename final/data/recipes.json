@@ -1,0 +1,14 @@
+[
+  {
+    "title": "Grilled Pork",
+    "protein": "High",
+    "prepTime": "30 minutes",
+    "difficulty": "Easy"
+  },
+  {
+    "title": "Pork Stew",
+    "protein": "High",
+    "prepTime": "45 minutes",
+    "difficulty": "Medium"
+  }
+]

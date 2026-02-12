@@ -1,0 +1,23 @@
+[
+  {
+    "name": "Large White",
+    "origin": "United Kingdom",
+    "purpose": "Meat production",
+    "growthRate": "Fast"
+  },
+  {
+    "name": "Landrace",
+    "origin": "Denmark",
+    "purpose": "Bacon production",
+    "growthRate": "Fast"
+  },
+  {
+  "name": "Large White",
+  "origin": "United Kingdom",
+  "purpose": "Meat production",
+  "growthRate": "Fast",
+  "description": "Large White pigs are known for their excellent growth rate, adaptability, and high-quality pork."
+}
+
+]
+
