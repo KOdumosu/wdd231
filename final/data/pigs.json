@@ -1,23 +1,52 @@
 [
   {
-    "name": "Large White",
-    "origin": "United Kingdom",
-    "purpose": "Meat production",
-    "growthRate": "Fast"
+    "name": "Large White, Scientific Name: Sus scrofa domesticus",
+    "origin": "Originated in England in the late 18th and early 19th centuries, Developed in Yorkshire (hence sometimes called Yorkshire pig) by selectively breeding local pigs for size, hardiness, and adaptability. It has since become a globally recognized breed, especially in commercial pork production.",
+    "purpose": "Primary Purpose: Meat production (pork), Strong reproductive ability, making them excellent mothers",
+    "growthRate": "Average daily gain (ADG): ~0.6–0.8 kg/day under proper feeding. Slaughter weight: 90–110 kg in about 5–6 months. Feed conversion efficiency: High; gains weight quickly on balanced diets. Good reproductive performance: ~10–12 piglets per litter"
   },
   {
-    "name": "Landrace",
-    "origin": "Denmark",
-    "purpose": "Bacon production",
-    "growthRate": "Fast"
+    "name": "Landrace, Scientific Name: Sus scrofa domesticus",
+    "origin": "The Landrace pig originated in Denmark in the late 19th centurym It was selectively bred from local Danish pigs crossed with large white pigs from England to improve size, mothering ability, and meat quality.",
+    "purpose": "Primary Purpose: Meat production, specifically pork",
+    "growthRate": "Landrace pigs have a fast growth rate compared to many local breeds. Average daily gain (ADG): ~0.6–0.8 kg/day under proper nutrition. Slaughter weight: 90–110 kg typically reached in 5–6 months. They are efficient feed converters, meaning they produce more weight gain per unit of feed. High reproductive efficiency: ~10–12 piglets per litter on average"
   },
   {
-  "name": "Large White",
-  "origin": "United Kingdom",
-  "purpose": "Meat production",
-  "growthRate": "Fast",
-  "description": "Large White pigs are known for their excellent growth rate, adaptability, and high-quality pork."
+  "name": "Duroc",
+  "origin": "United States, Developed in the early 19th century from a mix of red hogs imported from the West Indies and local American pigs. The breed was named after a New York landlord, Charles Duroc.",
+  "purpose": "Meat production (known for high-quality pork), Good growth rate and feed efficiency, Often used in crossbreeding to improve meat quality and growth performance",
+  "growthRate": "Fast (0.7–0.9 kg/day under good feeding), Slaughter weight: 90–110 kg in about 5–6 months, Feed conversion efficiency: High, Known for producing lean meat with good marbling",
+  "description": "Black body with a white band around shoulders and front legs, muscular build, and a calm temperament. They are known for their hardiness and adaptability to various climates. Excellent feed efficiency and good mothering ability, making them a popular choice for commercial pork production."
+},
+{
+  "name": "Hampshire",
+  "origin": "United States (from English ancestry), Developed in the early 19th century from pigs imported from England, particularly the Old English breed. The Hampshire pig is named after the county of Hampshire in England.",
+  "purpose": "Meat production (known for high-quality pork), Good growth rate and feed efficiency, Often used in crossbreeding to improve meat quality and growth performance",
+  "growthRate": "Moderate to fast (0.6–0.8 kg/day under good feeding), Slaughter weight: 90–110 kg in about 5–6 months, Feed conversion efficiency: High, Known for producing lean meat with good marbling",
+  "description": "Reddish-brown color, muscular build, and a calm temperament. They are known for their hardiness and adaptability to various climates. Excellent feed efficiency and good mothering ability, making them a popular choice for commercial pork production."
+},
+{
+  "name": "Chester White",
+  "origin": "United States (from English ancestry), Developed in the early 19th century from pigs imported from England, particularly the Old English breed. The Hampshire pig is named after the county of Hampshire in England.",
+  "purpose": "Meat production (known for high-quality pork), Good growth rate and feed efficiency, Often used in crossbreeding to improve meat quality and growth performance",
+  "growthRate": "Fast (0.6–0.8 kg/day under good feeding), Slaughter weight: 90–110 kg in about 5–6 months, Feed conversion efficiency: High, Known for producing lean meat with good marbling",
+  "description": " Durable and productive. They are known for their hardiness and adaptability to various climates. Excellent feed efficiency and good mothering ability, making them a popular choice for commercial pork production."
+},
+{
+  "name": "Tamworth pig",
+  "origin": "United Kingdom, Developed in the 19th century in the town of Tamworth, Staffordshire. It is believed to have descended from local pigs and possibly some influence from wild boars, making it one of the oldest pig breeds in Britain.",
+  "purpose": "Bacon production (known for high-quality bacon), Good growth rate and feed efficiency, Often used in crossbreeding to improve meat quality and growth performance",
+  "growthRate": "Moderate (0.5–0.7 kg/day under good feeding), Slaughter weight: 90–110 kg in about 6–7 months, Feed conversion efficiency: Moderate, Known for producing lean meat with good flavor",
+  "description": "Reddish color, long snout, and a calm temperament. They are known for their hardiness and adaptability to various climates. Excellent feed efficiency and good mothering ability, making them a popular choice for commercial pork production."
+},
+{
+  "name": "Pietrain",
+  "origin": "Belgium, Developed in the early 20th century in the village of Pietrain. It is believed to have been developed from local Belgian pigs crossed with imported breeds such as the Large White and Duroc to improve meat quality and growth performance.",
+  "purpose": "Lean meat production (known for high-quality pork), Good growth rate and feed efficiency, Often used in crossbreeding to improve meat quality and growth performance",
+  "growthRate": "Moderate (0.5–0.7 kg/day under good feeding), Slaughter weight: 90–110 kg in about 6–7 months, Feed conversion efficiency: Moderate, Known for producing lean meat with good flavor",
+  "description": "White with black spots, muscular build, and a calm temperament. They are known for their hardiness and adaptability to various climates. Excellent feed efficiency and good mothering ability, making them a popular choice for commercial pork production."
 }
+
 
 ]
 
