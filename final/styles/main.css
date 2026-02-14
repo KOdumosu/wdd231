@@ -136,6 +136,12 @@ img {
   text-decoration: none;
   font-weight: 600;
 }
+ #primary-nav a[aria-current="page"] {
+  background-color: #1b5e20;
+  padding: 0.5rem 0.75rem;
+  border-radius: 6px;
+}
+
 
 #primary-nav a:hover,
 #primary-nav a[aria-current="page"] {
@@ -355,12 +361,7 @@ main {
     border: none;
   }
 
-  #primary-nav a[aria-current="page"] {
-  background-color: #1b5e20;
-  padding: 0.5rem 0.75rem;
-  border-radius: 6px;
-}
-
+ 
   .header-wrapper {
     flex-wrap: nowrap;
   }
