@@ -1,3 +1,5 @@
+
+
 <!DOCTYPE html>
 <html lang="en">
 <head>
@@ -50,82 +52,67 @@
     <!-- Navigation -->
     <nav id="primary-nav">
       <ul>
-        <li><a href="index.html" aria-current="page">Home</a></li>
+        <li><a href="index.html">Home</a></li>
         <li><a href="pig-farming.html">Pig Farming Guide</a></li>
         <li><a href="pork-recipes.html">Pork &amp; Recipes</a></li>
-        <li><a href="form.html">Place Order</a></li>
+        <li><a href="form.html" aria-current="page">Place Order</a></li>
       </ul>
     </nav>
     <br>
+<!-- ORDER FORM SECTION -->
+<section class="order-form">
 
-    <!-- HERO SECTION -->
-    <section class="hero">
-      <img 
-        src="images/hero.jpg" 
-        alt="Healthy pigs on a modern pig farm"
-        loading="lazy"
-        width="1200"
-        height="600">
-    </section>
+  <h2>Place Your Order</h2>
+  <p>Fill in your details and we will contact you.</p>
 
-    <!-- INTRODUCTION & FACTS -->
-    <section class="intro-facts">
-      <div class="introduction">
-        <h2>Introduction</h2>
-        <p>
-          Pig farming plays a vital role in food security and protein supply.
-          At Eflux Piggery &amp; Pork, we promote sustainable pig farming practices
-          that support healthy livestock and quality pork production.
-          Our aim is to promote sustainable pig farming practices 
-          and provide reliable information about pork as a protein source. 
-        </p>
-        <p>
-          Pork is a rich source of protein and essential nutrients, making it
-          an important part of a balanced diet when produced and consumed responsibly.
-        </p>
-        <p>
-          We are here to give educational and practical information for farmers, 
-          students, and consumers interested in pig production and pork consumption.
-          Our audience are small-scale farmers, agricultural students, and individuals interested 
-          in learning more about pork nutrition and recipes.
-        </p>
-      </div>
+  <!-- FORM WRAPPER -->
+  <div id="formContainer">
+    <form>
+      
+      <fieldset>
+        <legend>Customer Information</legend>
+        <label>Full Name</label>
+        <input type="text" required>
 
-      <aside class="did-you-know">
-        <h2>Did You Know?</h2>
-        <ul>
-          <li>Pigs are among the most efficient livestock for converting feed into meat.</li>
-          <li>Pork contains high-quality protein and essential vitamins.</li>
-          <li>Proper feeding improves growth rate and reduces farming costs.</li>
-        </ul>
-      </aside>
-    </section>
+        <label>Email</label>
+        <input type="email" required>
 
-    <!-- FEATURE LINKS -->
-    <section class="features">
-      <h2 class="visually-hidden">Featured Sections</h2>
-      <div class="feature-cards">
-        <article class="feature-card">
-          <h3>Pig Breeds</h3>
-          <p>Learn about popular pig breeds and their suitability for meat production.</p>
-          <a href="pig-farming.html">Explore Breeds</a>
-        </article>
+        <label>Phone</label>
+        <input type="tel" required>
+      </fieldset>
 
-        <article class="feature-card">
-          <h3>Feeding Tips</h3>
-          <p>Discover cost-effective feeding strategies that improve pig growth.</p>
-          <a href="pig-farming.html">View Feeding Tips</a>
-        </article>
+      <fieldset>
+        <legend>Order Details</legend>
+        <label>Product</label>
+        <select required>
+          <option value="">Select product</option>
+          <option>Fresh Pork</option>
+          <option>Live Pig</option>
+          <option>Piglets</option>
+        </select>
 
-        <article class="feature-card">
-          <h3>Recipes</h3>
-          <p>Try simple and nutritious pork recipes using locally available ingredients.</p>
-          <a href="pork-recipes.html">See Recipes</a>
-        </article>
-      </div>
-    </section>
+        <label>Quantity</label>
+        <input type="number" required>
 
-  </main>
+        <label>Additional Notes</label>
+        <textarea rows="4"></textarea>
+      </fieldset>
+
+      <button type="submit">Place Order</button>
+
+    </form>
+  </div>
+
+  <!-- SUCCESS MESSAGE (hidden initially) -->
+  <div id="successMessage" style="display:none;">
+    <h3>✅ Order Received!</h3>
+    <p>
+      Thanks! We have taken your order.  
+      Our marketing team will contact you shortly.
+    </p>
+  </div>
+
+</section>
 
   <!-- FOOTER -->
   <footer class="site-footer">
@@ -172,6 +159,8 @@
 
   <!-- Scripts -->
   <script type="module" src="scripts/navigation.js"></script>
+  <script src="scripts/formsubmission.js" ></script>
   
 </body>
 </html>
+
